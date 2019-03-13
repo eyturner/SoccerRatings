@@ -1,0 +1,21 @@
+Week 30
+Newcastle,1652
+Manchester City,1981
+Fulham,1548
+Chelsea,1826
+Huddersfield,1501
+Wolves,1661
+Everton,1665
+Crystal Palace,1655
+West Ham,1664
+Leicester,1681
+Manchester United,1855
+Brighton,1616
+Liverpool,1937
+Southampton,1648
+Tottenham,1888
+Watford,1667
+Arsenal,1843
+Cardiff,1573
+Bournemouth,1664
+Burnley,1626
