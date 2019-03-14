@@ -45,14 +45,16 @@ def updateRatings(content, matches, currentRound):
             f.write(team + ',' + str(teamRatings[team]) + '\n')
         f.close()
 
-
-teamRatings = {}
-matches = []
-f = open('/Users/eliturner/Documents/Python Projects/SoccerRatings/ratings.txt', 'r')
-content = f.readlines()
-f.close()
-prevRound = int(content[0].split()[1])
-url = 'https://www.scorespro.com/soccer/england/premier-league/results'
-getMatches(matches, prevRound, url)
-updateRatings(content, matches, prevRound + 1)
-df = pd.read_csv('/Users/eliturner/Documents/Python Projects/SoccerRatings/RatingsSheet.csv', index_col = 'Team')
+def main():
+    teamRatings = {}
+    matches = []
+    f = open('/Users/eliturner/Documents/Python Projects/SoccerRatings/ratings.txt', 'r')
+    content = f.readlines()
+    f.close()
+    prevRound = int(content[0].split()[1])
+    url = 'https://www.scorespro.com/soccer/england/premier-league/results'
+    getMatches(matches, prevRound, url)
+    updateRatings(content, matches, prevRound + 1)
+    df = pd.read_csv('/Users/eliturner/Documents/Python Projects/SoccerRatings/RatingsSheet.csv', index_col = 'Team')
+if __name__ == '__main__':
+    main()
